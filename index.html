@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网站</title>
+    <!-- 引入 Font Awesome 图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- 引入 Swiper 轮播组件 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 测试图片 -->
+    <img src="images/background.jpg" alt="测试图片" style="width: 100px; height: 100px;">
+    
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="logo">魔仙王子</div>
+        <div class="nav-links">
+            <a href="#home">首页</a>
+            <a href="#about">关于我</a>
+            <a href="#portfolio">作品集</a>
+            <a href="#contact">联系我</a>
+        </div>
+    </nav>
+
+    <!-- 首页头部 -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>欢迎来到魔仙王子的个人网站</h1>
+            <p>网页开发者 | 设计师 | 创作者</p>
+        </div>
+    </header>
+
+    <!-- 照片轮播 -->
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/slide1.jpg" alt="图片1"></div>
+            <div class="swiper-slide"><img src="images/slide2.jpg" alt="图片2"></div>
+            <div class="swiper-slide"><img src="images/slide3.jpg" alt="图片3"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- 关于我 -->
+    <section id="about" class="about">
+        <h2>关于我</h2>
+        <div class="about-content">
+            <img src="images/profile.jpg" alt="个人照片">
+            <div class="about-text">
+                <p>这里是你的个人介绍...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品集 -->
+    <section id="portfolio" class="portfolio">
+        <h2>作品集</h2>
+        <div class="portfolio-grid">
+            <!-- 作品卡片示例 -->
+            <div class="portfolio-item">
+                <img src="images/project1.jpg" alt="项目1">
+                <h3>项目名称</h3>
+                <p>项目描述...</p>
+            </div>
+            <!-- 更多作品卡片 -->
+        </div>
+    </section>
+
+    <!-- 联系表单 -->
+    <section id="contact" class="contact">
+        <h2>联系我</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="您的姓名" required>
+            <input type="email" placeholder="您的邮箱" required>
+            <textarea placeholder="请输入留言内容" required></textarea>
+            <button type="submit">发送消息</button>
+        </form>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2024 魔仙王子. 保留所有权利.</p>
+    </footer>
+
+    <!-- JavaScript 库 -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
